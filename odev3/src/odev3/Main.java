@@ -7,6 +7,7 @@ public class Main {
 		
 		Student student1 = new Student();
 		student1.setFirstName("Anýl");
+		student1.setLastName("Bayýr");
 		student1.setCourseHomeworks(12);
 		student1.setCompletedHomeworks(6);
 		
