@@ -20,11 +20,11 @@ public class MernisServiceAdapter implements CustomerCheckService {
 			return result = client.TCKimlikNoDogrula(Long.parseLong(customer.getNationalIdentity()), 
 					customer.getFirstName().toUpperCase(), 
 					customer.getLastName().toUpperCase(), 
-					customer.getBirthDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate().getYear());
+					customer.getBirthDate().getYear());
 		} catch (NumberFormatException | RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+				}
 		return result;
 	}
 
